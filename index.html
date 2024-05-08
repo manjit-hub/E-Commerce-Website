@@ -21,15 +21,16 @@
                     <img src="RedStore/images/logo.png" width="125PX">
                 </div>
                 <nav>
-                <ul>
+                <ul id ="MenuItems" >
                     <Li><a href="">Home</a></Li>
                     <Li><a href="">Products</a></Li>
                     <Li><a href="">About</a></Li>
                     <Li><a href="">Contact</a></Li>
                     <Li><a href="">Account</a></Li>
-                </ul>
+                </u>
                 </nav>
                 <img src="RedStore/images/cart.png" width="30ox" height="30px">
+                <img src="RedStore/images/menu.png" class = "menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -213,6 +214,7 @@
                 <p>$30.00</p>
             </div>   
     </div>
+    <!-- </div> -->
 
     <!-- ----- OFFERS -----  -->
     <div class="offer">
@@ -228,13 +230,145 @@
                         AMOLED color <br>full-touch display with adjustable brightness,
                         so everything is clear as can be.<br>
                     </small>
-                    <a href="" class="btn">Buy Now &#8594</a>
+                    <a href="" class="btn">Buy Now &#8594;</a>
 
                 </div>
             </div>
         </div>
     </div>
+</div>
+    <!-- ----- TESTIMONIAL -----  -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <span class="fa fa-quote-left"></span>
+                    <p>“Solid Fitness Companion” The Mi Band 4 impresses with its AMOLED display, accurate tracking, and great battery life. A must-have for health-conscious users.
+                    </p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="RedStore/images/user-1.png">
+                    <h3>Perry Arya</h3>
+                </div>
+                <div class="col-3">
+                    <span class="fa fa-quote-left"></span>
+                    <p>“Xiaomi Nails It” Xiaomi’s Mi Band 4 excels with its vibrant display, customization options, and data insights. Unbeatable at this price point.
+                    </p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="RedStore/images/user-2.png">
+                    <h3>Mike Fury</h3>
+                </div>
+                <div class="col-3">
+                    <span class="fa fa-quote-left"></span>
+                    <p>“Style Meets Functionality” The sleek Mi Band 4 complements any outfit, transitions seamlessly, and offers great features. A trendsetter’s accessory! 😊👍
+                    </p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="RedStore/images/user-3.png">
+                    <h3>Elina Haland</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ----- BRANDS -----  -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="RedStore/images/logo-godrej.png">
+                </div>                
+                <div class="col-5">
+                    <img src="RedStore/images/logo-oppo.png">
+                </div>                
+                <div class="col-5">
+                    <img src="RedStore/images/logo-coca-cola.png">
+                </div>                
+                <div class="col-5">
+                    <img src="RedStore/images/logo-paypal.png">
+                </div>                
+                <div class="col-5">
+                    <img src="RedStore/images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- FOOTER -----  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="RedStore/images/play-store.png">
+                        <img src="RedStore/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="RedStore/images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class = "copyright">Copyright 2024 - Redstore Pvt. Ltd.</p>
+        </div>
+    </div>
+
+    <!-- -----js for toggle menu -----  -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
 

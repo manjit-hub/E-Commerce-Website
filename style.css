@@ -363,12 +363,54 @@ select:focus{
     transform: translateY(-5px);
 }
 
+/* ----- SINGLE PRODUCT DETAILS -----  */
 
+.single-prd{
+    margin-top: 80px;
+}
 
+.single-prd .col-2 img{
+    padding: 4px;
+}
 
+.single-prd .row .col-2{
+    padding: 20px;
+    justify-content: space-between;
+}
 
+.rowX{
+    display: flex;
+    padding: 0;
+}
+.single-prd h4{
+    margin:20px 0 ;
+    font-size: 22px;
+    font-weight: bold;
+}
 
+.single-prd select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
 
+.single-prd input{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-prd .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
 
 
 
@@ -430,8 +472,21 @@ select:focus{
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
-        .col-2, .col-3, .col-4{
-            flex-basis: 100%;
-        }
     }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-prd .row{
+        text-align: left;
+    }
+
+    .single-prd col-2{
+        padding: 20px 0;
+    }
+
+    .single-prd h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
 }

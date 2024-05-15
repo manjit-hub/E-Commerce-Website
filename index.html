@@ -18,18 +18,23 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="RedStore/images/logo.png" width="125PX">
+                    <a href="index.html">
+                        <img src="RedStore/images/logo.png" width="125PX">
+                    </a>
                 </div>
                 <nav>
                 <ul id ="MenuItems" >
-                    <Li><a href="">Home</a></Li>
-                    <Li><a href="">Products</a></Li>
+                    <Li><a href="index.html">Home</a></Li>
+                    <Li><a href="product.html">Products</a></Li>
                     <Li><a href="">About</a></Li>
                     <Li><a href="">Contact</a></Li>
-                    <Li><a href="">Account</a></Li>
+                    <Li><a href="account.html">Account</a></Li>
                 </u>
                 </nav>
-                <img src="RedStore/images/cart.png" width="30ox" height="30px">
+                <a href="cart.html">
+                    <img src="RedStore/images/cart.png" width="30ox" height="30px">
+                </a>
+                
                 <img src="RedStore/images/menu.png" class = "menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -69,8 +74,10 @@
         <h2 class = "title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="RedStore/images/product-1.jpg">
-                <h4>Red Printed Tshirt</h4>
+                <a href="products-detail.html">
+                    <img src="RedStore/images/product-1.jpg">
+                    <h4>Red Printed Tshirt</h4>
+                </a>
                 <div class="rating">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -352,19 +359,19 @@
 
     <!-- -----js for toggle menu -----  -->
 
-    <script src="script.js">
-        // var MenuItems = document.getElementById("MenuItems");
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
 
-        // MenuItems.style.maxHeight = "0px";
+        MenuItems.style.maxHeight = "0px";
 
-        // function menutoggle(){
-        //     if(MenuItems.style.maxHeight =="0px"){
-        //         MenuItems.style.maxHeight = "200px";
-        //     }
-        //     else{
-        //         MenuItems.style.maxHeight = "0px";
-        //     }
-        // }
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
     </script>
 </body>
 </html>

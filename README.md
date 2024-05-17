@@ -1,1 +1,1 @@
-Hosted Link: https://manjit-hub.github.io/Product_Selling_Website/
+Hosted Link: https://manjit-hub.github.io/E-Commerce-Website/
